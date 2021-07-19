@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Output';
+  cardData: any =[]
+  addCard(data:any){
+    if (this.cardData.length<10){
+          this.cardData=data }
+  }
+
+  removeAll() {
+    
+    this.cardData=[]
+    
+    }
 }
+
+
